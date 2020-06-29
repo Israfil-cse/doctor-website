@@ -9,8 +9,112 @@
 <body>
     <section id="header">
         <div class="container">
-            <img src="img/logo.png" alt="this my site logo">
+            <img src="img/logo.png" alt="this my site logo" class="logo">
+            <div class="header-text">
+                <h1>The purpose is to <br> teach, bring learning people.</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod aliquid natus laborum incidunt ipsa? Saepe libero, recusandae cumque quibusdam consequatur temporibus doloremque maiores id, aperiam vero tempore soluta praesentium itaque.</p>
+                <button class="common-btn">Read More</button>
+                <div class="line">
+                    <span class="line1"></span> <br>
+                    <span class="line2"></span> <br>
+                    <span class="line3"></span>
+                </div>
+            </div>
         </div>
     </section>
+    <nav id="side-nav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">FUCTER</a></li>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">OFFER</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+    <img src="img/menu.png" alt="" id="menuBtn">
+
+    <!-- about -->
+    <section id="about">
+        <div class="about-left">
+            <img src="img/about.png" alt="">
+        </div>
+        <div class="about-right">
+            <div class="aboutText">
+                <h1>About text</h1> 
+                <span class="square"></span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident eaque nihil cum dolorum vel suscipit maiores voluptatum alias sint neque optio est incidunt saepe ipsum aliquid, non doloremque adipisci quos corrupti consequatur, illo cumque ad labore. At, nihil corporis? Atque exercitationem vel nihil libero nulla deleniti recusandae neque ratione unde.</p>
+                <br>
+                <div class="line">
+                    <span class="line1"></span> <br>
+                    <span class="line2"></span> <br>
+                    <span class="line3"></span>
+                </div>
+                <h2>"Learning is not attained by chance,it nust be sought for with ardor and attended to with diligence"</h2>
+                <h3>----Abugakk Adams</h3>
+            </div>
+        </div>
+    </section>
+    <section id="fucture">
+        <div class="row">
+            <div class="col"><img src="img/pic-1.png" alt="">
+            <h4>Learn Anywhare
+            </h4>
+        <p>Switch between your computer, tablet or mobile</p></div>
+            <div class="col"><img src="img/pic-2.png" alt="">
+                <h4>Expert Teacher
+                </h4>
+            <p>learn form industy expert who are pasionate about teaching</p></div> 
+            <div class="col"><img src="img/pic-3.png" alt="">
+                <h4>Unlimted access
+                </h4>
+            <p>Choice what you'd like to learn from our extensive subsvription libary</p></div>
+        </div>
+    </section>
+    <section class="fucture-btn">
+        <div class="line">
+            <span class="line1"></span> <br>
+            <span class="line2"></span> <br>
+            <span class="line3"></span>
+        </div>
+        <button class="common-btn">Start free trail</button>
+    </section>
+    <!--courses-->
+<section id="courses">
+    <div class="courses-row">
+        <div class="courses-left">
+            <div class="courses-text">
+                <h1>Browse our top <br> courses</h1>
+                <br>
+                <span class="square"></span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis molestiae accusamus dicta eum, reiciendis earum dolores vitae nam accusantium animi minus quae voluptatem non explicabo cum laborum hic exercitationem ipsam. </p> <br>
+                    <div class="line">
+                        <span class="line1"></span> <br>
+                        <span class="line2"></span> <br>
+                        <span class="line3"></span>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="courses-right">
+            <img src="img/course.png" alt="">
+        </div>
+    </div>
+</section>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("side-nav");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
 </body>
 </html>
